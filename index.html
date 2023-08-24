@@ -1,1 +1,33 @@
-"Hello World"
+<!DOCTYPE html>
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zadáni SŽ</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Zadání SŽ Manca</h1>
+    <p>Napište písmena pro graf a stiskněte tlačítko.</p>
+    <script src="src/script.js"></script>
+
+    <form>
+      <p>Start</p>
+      <input type="text" id="start" />
+      <p>Konec</p>
+      <input type="text" id="end" />
+    <p></p>
+      <input value="Najdi cestu" type="button" onclick="LoadCanvas()" />
+    </form>
+
+    <script>
+      window.onload = LoadCanvas;
+    </script>
+    <p>
+      <canvas id="canvas" width="1000" height="600"></canvas>
+    </p>
+  </body>
+</html>
