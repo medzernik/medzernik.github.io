@@ -12,7 +12,7 @@
   <body>
     <h1>Zadání SŽ Manca</h1>
     <p>Napište písmena pro graf a stiskněte tlačítko.</p>
-    <script src="script.ts"></script>
+    <script src="main/script.ts"></script>
 
     <form>
       <p>Start</p>
@@ -20,13 +20,12 @@
       <p>Konec</p>
       <input type="text" id="end" />
     <p></p>
-      <input value="Najdi cestu" type="button" onclick="LoadCanvas()" />
+      <input value="Nadi cestu" type="button" onclick="LoadCanvas()" />
     </form>
 
     <script>
       window.onload = LoadCanvas;
     </script>
-    
     <p>
       <canvas id="canvas" width="1000" height="600"></canvas>
     </p>
