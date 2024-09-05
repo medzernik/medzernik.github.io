@@ -142,8 +142,8 @@ function DisplayPath(ctx: CanvasRenderingContext2D) {
   const endElement = document.getElementById("end") as HTMLInputElement | null;
 
   // Konverze na String
-  const start: string | undefined = startElement?.value;
-  const end: string | undefined = endElement?.value;
+  const start: string | undefined = startElement?.value.toUpperCase();
+  const end: string | undefined = endElement?.value.toUpperCase();
 
   // Detekce chyby, jestli hodnoty neexistuje, doslo k chybe
   if (!start || !end) {

@@ -130,8 +130,8 @@ function DisplayPath(ctx) {
     var startElement = document.getElementById("start");
     var endElement = document.getElementById("end");
     // Konverze na String
-    var start = startElement === null || startElement === void 0 ? void 0 : startElement.value;
-    var end = endElement === null || endElement === void 0 ? void 0 : endElement.value;
+    var start = startElement === null || startElement === void 0 ? void 0 : startElement.value.toUpperCase();
+    var end = endElement === null || endElement === void 0 ? void 0 : endElement.value.toUpperCase();
     // Detekce chyby, jestli hodnoty neexistuje, doslo k chybe
     if (!start || !end) {
         console.error("Neexistující uzel!");
