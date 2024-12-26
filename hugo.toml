@@ -5,7 +5,7 @@ theme = 'risotto'
 
 author = "medzernik"
 copyright = "© [medzernik](https://medzernik.dev)."
-paginate = 3
+pagination.pagerSize= 3
 DefaultContentLanguage = "en-us"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
