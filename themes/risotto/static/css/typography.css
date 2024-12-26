@@ -1,6 +1,12 @@
 /* Fonts */
+
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url('/fonts/BerkeleyMono-Regular.woff2') format('woff2');
+}
+
 :root {
-  --font-monospace: "Berkeley Mono", monospace;
+  --font-monospace: "BerkeleyMono";
   src: url('/fonts/Berkeley\ Mono.woff2');
 }
 
