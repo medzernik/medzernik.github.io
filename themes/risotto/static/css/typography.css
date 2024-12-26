@@ -1,13 +1,13 @@
 /* Fonts */
 
 @font-face {
-  font-family: "BerkeleyMono";
-  src: url('/fonts/BerkeleyMono-Regular.woff2') format('woff2');
+  font-family: "TX-02";
+  src: url('/fonts/TX-02-Variable.woff2') format('woff2');
 }
 
 :root {
-  --font-monospace: "BerkeleyMono";
-  src: url('/fonts/Berkeley\ Mono.woff2');
+  --font-monospace: "TX-02";
+  src: url('/fonts/TX-02-Variable.woff2');
 }
 
 body {
