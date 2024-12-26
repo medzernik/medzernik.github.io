@@ -1,9 +1,8 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+title = "Medzernik's dev blog"
+description = "How to use my website and what is it about"
+date = "2024-12-26"
+author = "Medzernik"
 +++
 
 So I've decided to write a blog. This page will summarize my experiences with various technologies, my annoyances and other things I find annoying but hope that hopefully can resonate with someone.
