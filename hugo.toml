@@ -42,12 +42,6 @@ url = "https://github.com/medzernik"
 
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-
 [taxonomies]
 category = "categories"
 tag = "tags"
