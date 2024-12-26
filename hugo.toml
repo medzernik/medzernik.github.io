@@ -41,7 +41,12 @@ title = "GitHub"
 url = "https://github.com/medzernik"
 
 [menu]
-
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+      
 [taxonomies]
 category = "categories"
 tag = "tags"
