@@ -19,7 +19,7 @@ sectionPagesMenu = "main"
 noindex = false
 
 [params.theme]
-palette = "base16-dark"
+palette = "tender"
 
 # Sidebar: about/bio
 [params.about]
