@@ -14,6 +14,7 @@ ignoreErrors = ["error-remote-getjson"]
 
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
+canonifyURLs = true
 
 [params]
 noindex = false
