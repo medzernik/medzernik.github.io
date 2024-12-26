@@ -1,7 +1,7 @@
 /* Fonts */
 :root {
   --font-monospace: "Berkeley Mono", monospace;
-  src: url('/fonts/Berkeley\ Mono.woff2');
+  src: url('/static/fonts/BerkeleyMono-Regular.woff2');
 }
 
 body {
