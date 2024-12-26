@@ -1,4 +1,4 @@
-baseURL = 'medzernik.github.io/'
+baseURL = 'https://medzernik.github.io/'
 languageCode = 'en-us'
 title = "Medzernik's Dev Blog"
 theme = 'risotto'
