@@ -36,11 +36,6 @@ logo = "🍚"
 # * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
 
 [[params.socialLinks]]
-icon = "fa-brands fa-gitlab"
-title = "GitLab"
-url = "https://gitlab.com/medzernik"
-
-[[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
 url = "https://github.com/medzernik"
@@ -50,7 +45,7 @@ url = "https://github.com/medzernik"
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/posts/about"
+    url = "/about/"
     weight = 10
 
 [taxonomies]
