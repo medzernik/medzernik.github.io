@@ -25,3 +25,5 @@ public/
 *.sw?
 
 public
+.vercel
+target
