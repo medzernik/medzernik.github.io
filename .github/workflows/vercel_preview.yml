@@ -22,7 +22,7 @@ fmt:
     - uses: actions/checkout@v4
     - uses: dtolnay/rust-toolchain@nightly
         with:
-        components: rustfmt
+            components: rustfmt
     - name: Enforce formatting
         run: cargo fmt --check
 
