@@ -80,6 +80,10 @@ jobs:
           # Upload dist dir
           path: './dist'
 
+      # Debug step to list available artifacts
+      - name: List available artifacts
+        run: curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts
+
       - name: Deploy to GitHub Pages 🚀
         id: deployment
         uses: actions/deploy-pages@v3
