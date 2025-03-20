@@ -45,25 +45,11 @@ jobs:
       - name: Build with Trunk
         run: ./trunk build --release --public-url "${GITHUB_REPOSITORY#*/}"
 
-      # Debug step to list contents of ./dist directory
-      - name: List contents of ./dist directory
-        run: ls -la ./dist
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          enablement: true
-
-      - name: Check ./dist directory
-        run: |
-          if [ -d "./dist" ]; then
-            echo "Directory exists"
-            ls -la ./dist
-          else
-            echo "Directory does not exist"
-            exit 1
-          fi
-
+        # with:
+          # enablement: true
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -71,4 +57,4 @@ jobs:
 
       - name: Deploy to GitHub Pages 🚀
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
