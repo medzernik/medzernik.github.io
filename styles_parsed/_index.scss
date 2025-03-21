@@ -1,7 +1,33 @@
-.test-79bc9bc {
-    background-color: red;
-    color: red;
-    font-size: small;
-    background: red;
-    font-family: 'Courier New', Courier, monospace;
+/* Define the custom font */
+@font-face {
+    font-family: 'TX-02';
+    src: url('../fonts/TX-02-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.topBar-79bc9bc {
+    background: rgb(124, 69, 17);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: 'TX-02', 'Courier New', monospace;
+}
+
+.topBarButton-79bc9bc {
+    background: linear-gradient(to right, rgb(52, 86, 180), rgb(82, 116, 210));
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 4px;
+    font-family: 'TX-02', 'Courier New', monospace;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.topBarButton-79bc9bc:hover {
+    background: linear-gradient(to right, rgb(82, 116, 210), rgb(112, 146, 240));
 }

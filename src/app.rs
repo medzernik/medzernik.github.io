@@ -9,13 +9,22 @@ pub fn App() -> impl IntoView {
     view! {
         <Router>
             <Routes fallback=|| "Not found.">
-                <Route path=path!("/") view=MainPage />
+                <Route path=path!("/") view=TopBar />
+                <Route path=path!("/home") view=TopBar />
+                <Route path=path!("/test") view=TopBar />
+
             </Routes>
         </Router>
     }
 }
 
 #[component]
-fn MainPage() -> impl IntoView {
-    view! { <p class=style::test>AHOJS</p> }
+fn TopBar() -> impl IntoView {
+    view! {
+        <div class=style::topBar>
+            <p class=style::topBarButton>HOME</p>
+            <p class=style::topBarButton>POSTS</p>
+            <p class=style::topBarButton>ABOUT</p>
+        </div>
+    }
 }
