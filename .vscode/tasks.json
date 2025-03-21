@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run server",
+            "type": "shell",
+            "command": "trunk serve"
+        },
+        {
+            "label": "Run CSS checker",
+            "type": "shell",
+            "command": "stylance --watch --output-file ${workspaceFolder}/styles_parsed/main.module.css ${cwd}"
+        }
+    ]
+}
