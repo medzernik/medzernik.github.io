@@ -51,7 +51,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": ". $HOME/.cargo/env && bash ./scripts/install_deps.sh"
+	"postCreateCommand": ". $HOME/.cargo/env && bash sudo ./scripts/permissions_fix.sh && ./scripts/install_deps.sh "
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
