@@ -8,3 +8,4 @@ anyhow = "1.0"
 console_error_panic_hook = "0.1"
 leptos = { version = "0.7", features = ["csr"] }
 leptos_router = "0.7"
+stylance = {version = "0.5"} 

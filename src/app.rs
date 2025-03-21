@@ -1,21 +1,21 @@
 use leptos::prelude::*;
+use leptos_router::{components::*, path};
+use stylance::import_crate_style;
+
+import_crate_style!(style, "src/main.module.css");
+
 #[component]
 pub fn App() -> impl IntoView {
-    let (count, set_count) = signal(0);
     view! {
-        <button on:click=move |_| *set_count.write() += 1>"Click me"</button>
-        // now we use our component!
-        <ProgressBar progress=count />
+        <Router>
+            <Routes fallback=|| "Not found.">
+                <Route path=path!("/") view=MainPage />
+            </Routes>
+        </Router>
     }
 }
 
 #[component]
-fn ProgressBar(progress: ReadSignal<i32>) -> impl IntoView {
-    view! {
-        <progress
-            max="50"
-            // now this works
-            value=progress
-        />
-    }
+fn MainPage() -> impl IntoView {
+    view! { <p class=style::test>AHOJS</p> }
 }

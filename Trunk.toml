@@ -1,0 +1,7 @@
+[[hooks]]
+stage = "pre_build"
+command = "stylance"
+command_arguments = [".", "--output-file", "styles_parsed/main.module.css"]
+
+[watch]
+ignore = ["./styles_parsed"]
