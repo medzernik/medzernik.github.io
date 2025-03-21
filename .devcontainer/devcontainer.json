@@ -6,9 +6,7 @@
 	"image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {},
-		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": {
-			"profile": "default"
-		},
+		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": {},
 		"ghcr.io/eitsupi/devcontainer-features/nushell:0": {},
 		"ghcr.io/lee-orr/rusty-dev-containers/cargo-expand:0": {},
 		"ghcr.io/lee-orr/rusty-dev-containers/bacon:0": {}
