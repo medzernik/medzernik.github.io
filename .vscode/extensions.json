@@ -1,5 +1,14 @@
 {
     "recommendations": [
-        "rust-lang.rust-analyzer"
+        "rust-lang.rust-analyzer",
+        "davidanson.vscode-markdownlint",
+        "ms-vsliveshare.vsliveshare",
+        "ms-vscode.live-server",
+        "visualstudioexptteam.vscodeintellicode",
+        "natqe.reload",
+        "actboy168.tasks",
+        "ms-vscode.hexeditor",
+        "naumovs.color-highlight",
+        "adpyke.codesnap"
     ]
 }
