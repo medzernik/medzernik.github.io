@@ -25,7 +25,16 @@
 				"GitHub.copilot-chat",
 				"bedrankara.hoverconverter",
 				"natqe.reload",
-				"actboy168.tasks"
+				"actboy168.tasks",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"ms-vscode.live-server",
+				"ms-vsliveshare.vsliveshare",
+				"DavidAnson.vscode-markdownlint",
+				"rust-lang.rust-analyzer",
+				"ms-vscode.hexeditor",
+				"naumovs.color-highlight",
+				"adpyke.codesnap"
 			]
 		}
 	},
