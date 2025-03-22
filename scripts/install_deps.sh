@@ -9,7 +9,7 @@ cargo install trunk
 
 # Install stylance (CSS in Rust)
 echo "Installing stylance..."
-cargo install stylance
+cargo install stylance-cli
 
 # Install bacon (background rust code checker)
 echo "Installing bacon..."
