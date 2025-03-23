@@ -1,7 +1,7 @@
+use crate::components::button::mButton;
 use leptos::prelude::*;
 use leptos_router::{components::*, path};
 use stylance::import_crate_style;
-
 import_crate_style!(style, "src/main.module.css");
 
 #[component]
@@ -25,6 +25,7 @@ fn TopBar() -> impl IntoView {
             <p class=style::topBarButton>HOME</p>
             <p class=style::topBarButton>POSTS</p>
             <p class=style::topBarButton>ABOUT</p>
+            {mButton()}
         </div>
     }
 }
