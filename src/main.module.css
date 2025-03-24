@@ -6,9 +6,18 @@
     font-style: normal;
 }
 
+.header {
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: 'TX-02', 'Courier New', monospace;
+    color: white;
+    background: rgb(48, 48, 48);
+}
+
 .topBar {
-    background: rgb(124, 69, 17);
-    color:white;
+    background: rgb(48, 48, 48);
+    color: white;
     display: flex;
     flex-direction: row;
     align-content: center;
