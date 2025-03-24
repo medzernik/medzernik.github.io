@@ -9,8 +9,11 @@
 .header {
     flex-direction: row;
     align-content: center;
+    display: flex;
     justify-content: center;
-    font-family: 'TX-02', 'Courier New', monospace;
+    /* TODO: fix this */
+    font-family: 'TX-02', 'TX-02-Variable';
+    font-size: xx-large;
     color: white;
     background: rgb(48, 48, 48);
 }
@@ -21,22 +24,24 @@
     display: flex;
     flex-direction: row;
     align-content: center;
+    padding-bottom: 1rem;
     justify-content: center;
-    font-family: 'TX-02', 'Courier New', monospace;
+    font-family: 'TX-02', 'TX-02-Variable';
 }
 
 .topBarButton {
-    background: linear-gradient(to right, rgb(52, 86, 180), rgb(82, 116, 210));
+    background: linear-gradient(to bottom, rgb(52, 86, 180), rgb(82, 116, 210));
     color: white;
     border: none;
     padding: 8px 16px;
-    margin: 4px;
+    margin: 10px;
+    font-size: large;
     border-radius: 4px;
-    font-family: 'TX-02', 'Courier New', monospace;
+    font-family: 'TX-02', 'TX-02-Variable';
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .topBarButton:hover {
-    background: linear-gradient(to right, rgb(82, 116, 210), rgb(112, 146, 240));
+    background: linear-gradient(to bottom, rgb(82, 116, 210), rgb(112, 146, 240));
 }

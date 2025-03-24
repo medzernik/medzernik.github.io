@@ -1,11 +1,15 @@
 use leptos::prelude::*;
 use stylance::import_crate_style;
+
+use crate::components::header::{Header, TopBar};
 import_crate_style!(style, "src/main.module.css");
 
 #[component]
-pub fn about_page() -> impl IntoView {
+pub fn AboutPage() -> impl IntoView {
     view! {
-        <Header></Header>
-        <TopBar></TopBar>
+        <div>
+            <Header></Header>
+            <TopBar></TopBar>
+        </div>
     }
 }
