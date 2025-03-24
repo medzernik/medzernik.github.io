@@ -6,6 +6,18 @@
     font-style: normal;
 }
 
+.bodyText {
+    color: white;
+    font-family: 'TX-02', 'TX-02-Variable';
+    font-size: large;
+    max-width: 50%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background: rgb(48, 48, 48);
+}
+
 .header {
     flex-direction: row;
     align-content: center;
@@ -30,18 +42,16 @@
 }
 
 .topBarButton {
-    background: linear-gradient(to bottom, rgb(52, 86, 180), rgb(82, 116, 210));
-    color: white;
-    border: none;
-    padding: 8px 16px;
+    color: yellow;
     margin: 10px;
+    background-color: transparent;
+    border: none;
     font-size: large;
-    border-radius: 4px;
     font-family: 'TX-02', 'TX-02-Variable';
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .topBarButton:hover {
-    background: linear-gradient(to bottom, rgb(82, 116, 210), rgb(112, 146, 240));
+    font-weight: 900;
 }

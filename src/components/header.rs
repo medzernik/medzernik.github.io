@@ -14,9 +14,9 @@ pub fn Header() -> impl IntoView {
 pub fn TopBar() -> impl IntoView {
     view! {
         <div class=style::topBar>
-            <button class=style::topBarButton>HOME</button>
-            <button class=style::topBarButton>POSTS</button>
-            <button class=style::topBarButton>ABOUT</button>
+            <button class=style::topBarButton>home</button>
+            <button class=style::topBarButton>posts</button>
+            <button class=style::topBarButton>about</button>
         </div>
     }
 }
