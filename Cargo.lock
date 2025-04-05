@@ -918,6 +918,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "markdown"
+version = "1.0.0-alpha.23"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9047e0a37a596d4e15411a1ffbdabe71c328908cb90a721cb9bf8dcf3434e6d2"
+dependencies = [
+ "unicode-id",
+]
+
+[[package]]
 name = "medzernik-dev"
 version = "0.1.0"
 dependencies = [
@@ -925,6 +934,7 @@ dependencies = [
  "console_error_panic_hook",
  "leptos",
  "leptos_router",
+ "markdown",
  "stylance",
 ]
 
@@ -1654,6 +1664,12 @@ dependencies = [
  "quote",
  "syn",
 ]
+
+[[package]]
+name = "unicode-id"
+version = "0.3.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "10103c57044730945224467c09f71a4db0071c123a0648cc3e818913bde6b561"
 
 [[package]]
 name = "unicode-ident"
