@@ -1,20 +1,45 @@
 /* Define the custom font */
 @font-face {
     font-family: 'TX-02';
-    src: url('../fonts/TX-02-Variable.woff2') format('woff2');
+    src: url('/fonts/TX-02-Variable.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+
+
+.bodyContainer {
+    max-width: 80%;
+    justify-self: center;
+    display: flex;
+    margin:1rem;
+    flex-direction: column;
+    background: rgb(48, 48, 48);
+
+
+
 }
 
 .bodyText {
     color: white;
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: large;
-    max-width: 50%;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-self: center;
+    background: rgb(48, 48, 48);
+}
+
+.headerText {
+    flex-direction: row;
+    align-content: start;
+    display: flex;
+    justify-content: start;
+    margin:1rem;
+    /* TODO: fix this */
+    font-family: 'TX-02', 'TX-02-Variable';
+    font-size: xx-large;
+    color: white;
     background: rgb(48, 48, 48);
 }
 
@@ -30,12 +55,14 @@
     background: rgb(48, 48, 48);
 }
 
+
 .topBar {
     background: rgb(48, 48, 48);
     color: white;
     display: flex;
     flex-direction: row;
     align-content: center;
+    width: 100%;
     padding-bottom: 1rem;
     justify-content: center;
     font-family: 'TX-02', 'TX-02-Variable';

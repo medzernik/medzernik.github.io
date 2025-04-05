@@ -18,9 +18,9 @@ pub fn AboutPage() -> impl IntoView {
 #[component]
 pub fn AboutPageContent() -> impl IntoView {
     view! {
-        <div class=style::bodyText>
-            <h1># Test</h1>
-            <p>
+        <div class=style::bodyContainer>
+            <h1 class=style::headerText># Test</h1>
+            <p class=style::bodyText>
                 Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting.
             </p>
         </div>
