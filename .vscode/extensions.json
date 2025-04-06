@@ -23,6 +23,15 @@
         "ibm.output-colorizer",
         "humao.rest-client",
         "rust-lang.rust-analyzer",
-        "cordx56.rustowl-vscode"
+        "cordx56.rustowl-vscode",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode.remote-server",
+        "ms-vscode-remote.remote-wsl",
+        "github.codespaces",
+        "usernamehw.errorlens",
+        "github.remotehub",
+        "kisstkondoros.vscode-gutter-preview",
+        "wayou.vscode-todo-highlight",
+        "meganrogge.template-string-converter"
     ]
 }
