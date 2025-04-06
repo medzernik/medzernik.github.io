@@ -27,7 +27,9 @@ pub fn AboutPageContent() -> impl IntoView {
     let html = leptos_reactive::create_resource(
         || (),
         |_| async move {
-            load_md_file(PathBuf::from_str("/public/content/about/about.md").unwrap()).await
+            markdown::to_html(
+                &load_md_file(PathBuf::from_str("/public/content/about/about.md").unwrap()).await,
+            )
         },
     );
 
@@ -37,12 +39,9 @@ pub fn AboutPageContent() -> impl IntoView {
                 view! { <p>"Loading..."</p> }
             }>
                 {move || {
-                    html
-                        .with(|data| {
-                            view! {
-                                <div class=style::bodyText inner_html=data.clone().unwrap()></div>
-                            }
-                        })
+                    html.with(|data| {
+                        view! { <div class=style::bodyText inner_html=data.clone().unwrap()></div> }
+                    })
                 }},
 
             </Suspense>
