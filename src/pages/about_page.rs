@@ -1,5 +1,12 @@
-use crate::components::header::{Header, TopBar};
+use std::{path::PathBuf, str::FromStr};
+
+use crate::{
+    app::load_md_file,
+    components::header::{Header, TopBar},
+};
 use leptos::prelude::*;
+
+use leptos_reactive::SignalWith;
 use stylance::import_crate_style;
 
 import_crate_style!(style, "src/main.module.css");
@@ -17,12 +24,17 @@ pub fn AboutPage() -> impl IntoView {
 
 #[component]
 pub fn AboutPageContent() -> impl IntoView {
+    let html = leptos_reactive::create_resource(
+        || (),
+        |_| async move { load_md_file(PathBuf::from_str("/content/about/about.md").unwrap()).await },
+    );
+
     view! {
         <div class=style::bodyContainer>
-            <h1 class=style::headerText># Test</h1>
-            <p class=style::bodyText>
-                This is the about page.
-            </p>
+            <Suspense fallback=|| view! { <p>"Loading..."</p> }>
+                {move || html.with(|data| view! { <div class=style::bodyText inner_html=data.clone().unwrap()></div> } )},
+
+            </Suspense>
         </div>
     }
 }
