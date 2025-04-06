@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "rust-lang.rust-analyzer",
         "davidanson.vscode-markdownlint",
         "ms-vsliveshare.vsliveshare",
         "ms-vscode.live-server",
@@ -9,6 +8,21 @@
         "actboy168.tasks",
         "ms-vscode.hexeditor",
         "naumovs.color-highlight",
-        "adpyke.codesnap"
+        "adpyke.codesnap",
+        "vadimcn.vscode-lldb",
+        "formulahendry.code-runner",
+        "fill-labs.dependi",
+        "ms-vscode-remote.remote-containers",
+        "tamasfe.even-better-toml",
+        "github.vscode-github-actions",
+        "github.copilot",
+        "github.copilot-chat",
+        "bedrankara.hoverconverter",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "tyriar.lorem-ipsum",
+        "ibm.output-colorizer",
+        "humao.rest-client",
+        "rust-lang.rust-analyzer",
+        "cordx56.rustowl-vscode"
     ]
 }
