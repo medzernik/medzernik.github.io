@@ -13,7 +13,7 @@
     display: flex;
     margin:1rem;
     flex-direction: column;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 .bodyText {
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 .headerText {
@@ -37,7 +37,7 @@
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
     color: white;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 .header {
@@ -49,12 +49,12 @@
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
     color: white;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 
 .topBar {
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
     color: white;
     display: flex;
     flex-direction: row;
