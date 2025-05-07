@@ -1,7 +1,7 @@
 use crate::pages::{about_page::AboutPage, home_page::HomePage, posts_page::PostsPage};
 use leptos::prelude::*;
 use leptos_router::{components::*, path};
-use std::{io::Read, path::PathBuf};
+use std::path::PathBuf;
 use stylance::import_crate_style;
 
 import_crate_style!(style, "src/main.module.css");
