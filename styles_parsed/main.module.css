@@ -1,7 +1,7 @@
 /* Define the custom font */
 @font-face {
     font-family: 'TX-02';
-    src: url('fonts/TX-02-Variable.woff2') format('.woff2');
+    src: url('/public/fonts/TX-02-Variable.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,10 +13,7 @@
     display: flex;
     margin:1rem;
     flex-direction: column;
-    background: rgb(48, 48, 48);
-
-
-
+    background-color: rgb(48, 48, 48);
 }
 
 .bodyText-79bc9bc {
@@ -27,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 .headerText-79bc9bc {
@@ -40,7 +37,7 @@
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
     color: white;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 .header-79bc9bc {
@@ -52,12 +49,12 @@
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
     color: white;
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
 }
 
 
 .topBar-79bc9bc {
-    background: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
     color: white;
     display: flex;
     flex-direction: row;
