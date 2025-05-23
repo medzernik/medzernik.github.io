@@ -6,7 +6,7 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0"
 console_error_panic_hook = "0.1"
-leptos = { version = "0.8", features = ["csr", "nightly"] }
+leptos = { version = "0.8", features = ["csr"] }
 leptos-use = "0.15.7"
 leptos_reactive = "0.6"
 leptos_router = "0.8"

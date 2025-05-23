@@ -18,7 +18,3 @@ pub fn App() -> impl IntoView {
         </Router>
     }
 }
-
-pub async fn load_md_file(path: PathBuf) -> String {
-    std::fs::read_to_string(path.to_str().unwrap()).unwrap()
-}
