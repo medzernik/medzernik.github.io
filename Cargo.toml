@@ -13,3 +13,6 @@ leptos_router = "0.8"
 markdown = "1.0.0-alpha.23"
 reqwest = "0.12.15"
 stylance = { version = "0.6" }
+
+[profile.dev]
+debug = false
