@@ -8,10 +8,10 @@ anyhow = "1.0"
 console_error_panic_hook = "0.1"
 leptos = { version = "0.8", features = ["csr", "nightly"] }
 leptos-use = "0.15.7"
-leptos_reactive = "0.6.15"
+leptos_reactive = "0.6"
 leptos_router = "0.8"
 markdown = "1.0.0-alpha.23"
-reqwest = "0.12.15"
+reqwest = "0.12"
 stylance = { version = "0.6" }
 
 [profile.dev]
