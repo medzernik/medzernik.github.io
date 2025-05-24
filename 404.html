@@ -3,46 +3,59 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Medzernik's dev blog</title>
+    <title>Medzernik's Dev Blog</title>
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' https://static.cloudflareinsights.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; upgrade-insecure-requests; object-src 'none';">
-
-
 
     <script type="text/javascript">
         // Single Page Apps for GitHub Pages
         // MIT License
         // https://github.com/rafgraph/spa-github-pages
-        // This script takes the current url and converts the path and query
-        // string into just a query string, and then redirects the browser
-        // to the new url with only a query string and hash fragment,
-        // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-        // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-        // Note: this 404.html file must be at least 512 bytes for it to work
-        // with Internet Explorer (it is currently > 512 bytes)
+        // This script checks to see if a redirect is present in the query string,
+        // converts it back into the correct url and adds it to the
+        // browser's history using window.history.replaceState(...),
+        // which won't cause the browser to attempt to load the new url.
+        // When the single page app is loaded further down in this file,
+        // the correct url will be waiting in the browser's history for
+        // the single page app to route accordingly.
+        (function (l) {
+            // Check if l.search exists and if it contains the redirect marker '?/?/'
+            if (l.search && l.search.startsWith('?/?/')) {
+                // Extract the content after '?/?/'
+                // e.g., if l.search is '?/?/one/two&a=b~and~c=d', searchContent becomes 'one/two&a=b~and~c=d'
+                var searchContent = l.search.substring(3);
 
-        // If you're creating a Project Pages site and NOT using a custom domain,
-        // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-        // This way the code will only replace the route part of the path, and not
-        // the real directory in which the app resides, for example:
-        // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-        // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
-        // Otherwise, leave pathSegmentsToKeep as 0.
-        var pathSegmentsToKeep = 0;
+                var parts = searchContent.split('&');
+                // The first part is the path. Handle cases where it might be empty (e.g. root redirect).
+                var path = '/' + (parts[0] || '');
 
-        var l = window.location;
-        l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
+                // The remaining parts are query parameters
+                var query = parts.slice(1).map(function (s) {
+                    return s.replace(/~and~/g, '&'); // Decode '~and~' back to '&'
+                }).join('&');
 
+                var newUrl = path;
+                if (query) {
+                    newUrl += '?' + query; // Append query string if it exists
+                }
+
+                // l.pathname.slice(0, -1) correctly handles root or subdirectory deployments
+                // For root (e.g. custom domain): l.pathname is '/', slice(0,-1) is ''
+                // For subdir (e.g. user.github.io/repo/): l.pathname is '/repo/', slice(0,-1) is '/repo'
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + newUrl + l.hash
+                );
+            }
+        }(window.location));
     </script>
+    <link data-trunk rel="rust" data-wasm-opt="z" data-weak-refs />
+    <link data-trunk rel="copy-dir" href="public/content" />
+    <link data-trunk rel="copy-dir" href="public/fonts" />
+    <link data-trunk rel="copy-dir" href="public" />
+
+    <link data-trunk rel="css" href="styles_parsed/main.module.css" />
 </head>
 
-<body>
-</body>
+<body style="background-color: black;"></body>
 
 </html>
