@@ -17,10 +17,10 @@ pub fn TopBar() -> impl IntoView {
             <a href="/" class=style::topBarButton>
                 home
             </a>
-            <a href="/posts/:id" class=style::topBarButton>
+            <a href="/posts" class=style::topBarButton>
                 posts
             </a>
-            <a href="/:about" class=style::topBarButton>
+            <a href="/about" class=style::topBarButton>
                 about
             </a>
         </div>
