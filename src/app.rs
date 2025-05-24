@@ -10,7 +10,7 @@ import_crate_style!(style, "src/main.module.css");
 pub fn App() -> impl IntoView {
     view! {
         <Router>
-            <Routes fallback=|| "Not found.">
+            <Routes fallback=|| view! { <div class=style::headerText>"404 - NOT FOUND"</div> }>
                 <Route path=path!("/") view=HomePage />
                 <Route path=path!("posts") view=PostsPage />
                 <Route path=path!("about") view=AboutPage />
