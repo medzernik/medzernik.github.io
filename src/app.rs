@@ -1,7 +1,6 @@
 use crate::pages::{about_page::AboutPage, home_page::HomePage, posts_page::PostsPage};
 use leptos::prelude::*;
 use leptos_router::{components::*, path};
-use std::path::PathBuf;
 use stylance::import_crate_style;
 
 import_crate_style!(style, "src/main.module.css");
@@ -12,8 +11,8 @@ pub fn App() -> impl IntoView {
         <Router>
             <Routes fallback=|| view! { <div class=style::headerText>"404 - NOT FOUND"</div> }>
                 <Route path=path!("/") view=HomePage />
-                <Route path=path!("posts") view=PostsPage />
-                <Route path=path!("about") view=AboutPage />
+                <Route path=path!("/posts") view=PostsPage />
+                <Route path=path!("/about") view=AboutPage />
             </Routes>
         </Router>
     }
