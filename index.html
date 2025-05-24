@@ -7,10 +7,7 @@
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' https://static.cloudflareinsights.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; upgrade-insecure-requests; object-src 'none';">
 
-    <!-- <link rel="canonical" href="https://medzernik.dev" /> -->
-    <meta http-equiv="refresh" content="0; url=https://medzernik.dev" />
-
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         // Single Page Apps for GitHub Pages
         // MIT License
         // https://github.com/rafgraph/spa-github-pages
@@ -22,16 +19,35 @@
         // the correct url will be waiting in the browser's history for
         // the single page app to route accordingly.
         (function (l) {
-            if (l.search[1] === '/') {
-                var decoded = l.search.slice(1).split('&').map(function (s) {
-                    return s.replace(/~and~/g, '&')
-                }).join('?');
+            // Check if l.search exists and if it contains the redirect marker '?/?/'
+            if (l.search && l.search.startsWith('?/?/')) {
+                // Extract the content after '?/?/'
+                // e.g., if l.search is '?/?/one/two&a=b~and~c=d', searchContent becomes 'one/two&a=b~and~c=d'
+                var searchContent = l.search.substring(3);
+
+                var parts = searchContent.split('&');
+                // The first part is the path. Handle cases where it might be empty (e.g. root redirect).
+                var path = '/' + (parts[0] || '');
+
+                // The remaining parts are query parameters
+                var query = parts.slice(1).map(function (s) {
+                    return s.replace(/~and~/g, '&'); // Decode '~and~' back to '&'
+                }).join('&');
+
+                var newUrl = path;
+                if (query) {
+                    newUrl += '?' + query; // Append query string if it exists
+                }
+
+                // l.pathname.slice(0, -1) correctly handles root or subdirectory deployments
+                // For root (e.g. custom domain): l.pathname is '/', slice(0,-1) is ''
+                // For subdir (e.g. user.github.io/repo/): l.pathname is '/repo/', slice(0,-1) is '/repo'
                 window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
+                    l.pathname.slice(0, -1) + newUrl + l.hash
                 );
             }
-        }(window.location))
-    </script> -->
+        }(window.location));
+    </script>
     <link data-trunk rel="rust" data-wasm-opt="z" data-weak-refs />
     <link data-trunk rel="copy-dir" href="public/content" />
     <link data-trunk rel="copy-dir" href="public/fonts" />
