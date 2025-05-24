@@ -1,7 +1,7 @@
 /* Define the custom font */
 @font-face {
     font-family: 'TX-02';
-    src: url('/public/fonts/TX-02-Variable.woff2') format('woff2');
+    src: url('fonts/TX-02-Variable.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
     max-width: 80%;
     justify-self: center;
     display: flex;
-    margin:1rem;
+    margin: 1rem;
     flex-direction: column;
     background-color: rgb(48, 48, 48);
 }
@@ -32,7 +32,7 @@
     align-content: start;
     display: flex;
     justify-content: start;
-    margin:1rem;
+    margin: 1rem;
     /* TODO: fix this */
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
