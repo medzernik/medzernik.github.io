@@ -1,12 +1,14 @@
 use crate::pages::{about_page::AboutPage, home_page::HomePage, posts_page::PostsPage};
-use leptos::prelude::*;
+use leptos::{attr::Scope, prelude::*};
+use leptos_reactive::provide_context;
 use leptos_router::{components::*, path};
 use stylance::import_crate_style;
 
 import_crate_style!(style, "src/main.module.css");
 
 #[component]
-pub fn App() -> impl IntoView {
+pub fn App(cx: Scope) -> impl IntoView {
+    provide_context(cx);
     view! {
         <Router>
             <Routes fallback=|| view! { <div class=style::headerText>"404 - NOT FOUND"</div> }>
