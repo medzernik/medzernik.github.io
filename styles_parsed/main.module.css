@@ -13,18 +13,18 @@
     display: flex;
     margin: 1rem;
     flex-direction: column;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(48, 52, 73);
 }
 
 .bodyText-79bc9bc {
-    color: white;
+    color: rgb(198, 208, 245);
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: large;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-self: center;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(48, 52, 73);
 }
 
 .headerText-79bc9bc {
@@ -36,8 +36,8 @@
     /* TODO: fix this */
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
-    color: white;
-    background-color: rgb(48, 48, 48);
+    color: rgb(198, 208, 245);
+    background-color: rgb(48, 52, 73);
 }
 
 .header-79bc9bc {
