@@ -1,29 +1,22 @@
+use crate::pages::about_page::load_data;
 use leptos::prelude::*;
 use leptos_router::hooks::use_params_map;
-
-use markdown::{CompileOptions, Options, to_html_with_options};
+use markdown::CompileOptions;
+use markdown::{Options, to_html_with_options};
 use stylance::import_crate_style;
 
-use crate::pages::about_page::load_data;
 import_crate_style!(style, "src/main.module.css");
 
 #[component]
-pub fn SpecificPostPage() -> impl IntoView {
-    view! {
-        <div>
-            <PostPageContent />
-        </div>
-    }
-}
-
-#[component]
 pub fn PostPageContent() -> impl IntoView {
-    let async_data = LocalResource::new(async move || {
-        let params = use_params_map();
-        let id = params.read().get("id").unwrap_or_default();
-        load_data(&format!("content/posts/{id}.md")).await
-    });
+    let params = use_params_map();
 
+    let id = move || params.get().get("id").unwrap_or_default();
+    //
+    let async_data = LocalResource::new(move || {
+        let path = format!("content/posts/{}.md", id());
+        load_data(path)
+    });
     view! {
         <div class=style::bodyContainer>
             <div

@@ -15,7 +15,7 @@ pub fn AboutPage() -> impl IntoView {
 
 #[component]
 pub fn AboutPageContent() -> impl IntoView {
-    let async_data = LocalResource::new(async move || load_data("content/about/about.md").await);
+    let async_data = LocalResource::new(|| load_data(format!("content/about/about.md")));
 
     view! {
         <div class=style::bodyContainer>
@@ -45,7 +45,7 @@ pub fn AboutPageContent() -> impl IntoView {
     }
 }
 
-pub async fn load_data(url: &str) -> String {
+pub async fn load_data(url: String) -> String {
     // Assumes <link data-trunk rel="copy-dir" href="public/content/about" />
     // makes files from "public/content/about/" available under "/content/about/"
     // For example, if path is "about.md", the URL will be "/content/about/about.md"

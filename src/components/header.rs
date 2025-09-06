@@ -6,7 +6,7 @@ import_crate_style!(style, "src/main.module.css");
 pub fn Header() -> impl IntoView {
     view! {
         <div class=style::header>
-            <p>"Medzernik's Dev Blog"</p>
+            <p>"Medzernik's Dev Rant"</p>
         </div>
     }
 }

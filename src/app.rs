@@ -1,7 +1,7 @@
 use crate::{
     components::header::{Header, TopBar},
     pages::{
-        about_page::AboutPage, home_page::HomePage, post_page::SpecificPostPage,
+        about_page::AboutPage, home_page::HomePage, post_page::PostPageContent,
         posts_page::AllPostsPage,
     },
 };
@@ -18,16 +18,23 @@ pub fn App() -> impl IntoView {
             <nav>
                 <Header />
                 <TopBar />
+                // In your main App component's view
+                <main>
+                    <Routes fallback=|| view! { <h1>"404 - Not Found"</h1> }>
+                        // Home page
+                        <Route path=path!("/") view=HomePage />
+
+                        // 1. Route for the list of all posts
+                        <Route path=path!("/posts") view=AllPostsPage />
+
+                        // 2. Route for a single, specific post, using a dynamic :id
+                        <Route path=path!("/posts/:id") view=PostPageContent />
+
+                        // About page
+                        <Route path=path!("/about") view=AboutPage />
+                    </Routes>
+                </main>
             </nav>
-            <main>
-                <Routes fallback=|| view! { <div class=style::headerText>"404 - NOT FOUND"</div> }>
-                    <Route path=path!("/") view=HomePage />
-                    <ParentRoute path=path!("/posts") view=AllPostsPage>
-                        <Route path=path!(":id") view=SpecificPostPage />
-                    </ParentRoute>
-                    <Route path=path!("/about") view=AboutPage />
-                </Routes>
-            </main>
         </Router>
     }
 }
