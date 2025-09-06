@@ -20,9 +20,9 @@ pub fn TopBar() -> impl IntoView {
             <a href="/posts" class=style::topBarButton>
                 posts
             </a>
-            <a href="/about" class=style::topBarButton>
-                about
-            </a>
+        // <a href="/about" class=style::topBarButton>
+        // about
+        // </a>
         </div>
     }
 }

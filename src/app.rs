@@ -30,8 +30,8 @@ pub fn App() -> impl IntoView {
                         // 2. Route for a single, specific post, using a dynamic :id
                         <Route path=path!("/posts/:id") view=PostPageContent />
 
-                        // About page
-                        <Route path=path!("/about") view=AboutPage />
+                    // About page
+                    // <Route path=path!("/about") view=AboutPage />
                     </Routes>
                 </main>
             </nav>
