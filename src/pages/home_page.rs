@@ -8,8 +8,6 @@ import_crate_style!(style, "src/main.module.css");
 pub fn HomePage() -> impl IntoView {
     view! {
         <div>
-            <Header />
-            <TopBar />
             <HomePageContent />
         </div>
     }
