@@ -17,7 +17,6 @@ static POST_DIR: Dir = include_dir!("$CARGO_MANIFEST_DIR/public/content/posts");
 #[component]
 pub fn AllPostsPage() -> impl IntoView {
     leptos::logging::warn!("LOCATION: {POST_DIR:#?}");
-    leptos::logging::warn!("POSTS: {:#?}", *POSTS);
     view! {
         <div class=style::bodyContainer>
             <h1 class=style::headerText>"# All Posts"</h1>
@@ -89,6 +88,7 @@ pub static POSTS: Lazy<Vec<Post>> = Lazy::new(|| {
             // Parse frontmatter and markdown content
             let matter = Matter::<YAML>::new();
             let result = matter.parse::<PostMetadata>(content).unwrap();
+            leptos::logging::warn!("ITEMS: {result:#?}");
 
             let metadata: PostMetadata = result.data.unwrap_or_default();
 
