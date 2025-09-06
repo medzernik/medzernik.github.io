@@ -2,18 +2,29 @@
 @font-face {
     font-family: 'TX-02';
     src: url('fonts/TX-02-Variable.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
 
 .bodyContainer-79bc9bc {
     max-width: 80%;
+    width: 80%;
     justify-self: center;
     display: flex;
     margin: 1rem;
     flex-direction: column;
     background-color: rgb(48, 52, 73);
+}
+
+.articleButtonContainer-79bc9bc{
+    max-width: 100%;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 52, 73);
+    color: rgb(48, 52, 73);
 }
 
 .bodyText-79bc9bc {
@@ -33,11 +44,59 @@
     display: flex;
     justify-content: start;
     margin: 1rem;
-    /* TODO: fix this */
     font-family: 'TX-02', 'TX-02-Variable';
     font-size: xx-large;
     color: rgb(198, 208, 245);
     background-color: rgb(48, 52, 73);
+}
+
+.articleTitleButton-79bc9bc{
+    font-family: 'TX-02', 'TX-02-Variable';
+    flex-direction: row;
+    align-content: start;
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    display: flex;
+    justify-content: start;
+    font-size: large;
+    color: orange;
+    text-decoration-color: rgb(198, 208, 245);
+    text-decoration-line: underline;
+    transition: background 0.3s ease;
+}
+
+.articleTitleButton-79bc9bc:hover{
+    color: black;
+    background-color: orange;
+}
+
+.articleDescriptionButton-79bc9bc{
+    font-family: 'TX-02', 'TX-02-Variable';
+    flex-direction: row;
+    align-content: start;
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    display: flex;
+    justify-content: start;
+    font-size: medium;
+    border: none;
+    color: rgb(198, 208, 245);
+}
+
+.articleDateButton-79bc9bc{
+    flex-direction: row;
+    align-content: start;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    justify-content: start;
+    font-family: 'TX-02', 'TX-02-Variable';
+    font-size: smaller;
+    border: none;
+    color: rgb(138, 158, 183);
 }
 
 .header-79bc9bc {

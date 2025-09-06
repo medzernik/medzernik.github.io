@@ -35,12 +35,17 @@ pub fn AllPostsPage() -> impl IntoView {
                     // The `post` variable holds the data for one post.
                     children=|post: Post| {
                         view! {
-                            <li class=style::bodyContainer>
+                            <li class=style::articleButtonContainer>
                                 // Create a link to the specific post's page
                                 <a href=format!("/posts/{}", post.slug)>
-                                    <h2 class=style::headerText>{post.metadata.title}</h2>
-                                    <p class=style::bodyText>{post.metadata.description}</p>
+                                    <p class=style::articleTitleButton>{post.metadata.title}</p>
                                 </a>
+                                <p class=style::articleDateButton>
+                                    {post.metadata.date.to_string()}
+                                </p>
+                                <p class=style::articleDescriptionButton>
+                                    {post.metadata.description}
+                                </p>
                             </li>
                         }
                     }
