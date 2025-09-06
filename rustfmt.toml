@@ -1,2 +1,3 @@
 edition = "2024"
 # (optional) other config...
+newline_style = "Unix"
