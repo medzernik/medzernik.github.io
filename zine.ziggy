@@ -6,5 +6,6 @@ Site {
     .assets_dir_path = "assets",
     .static_assets = [
         "Temml.woff2",
+        "TX02.woff2"
     ],
 }
