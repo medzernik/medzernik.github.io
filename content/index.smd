@@ -8,6 +8,6 @@
 
 This is my personal webpage (finally). I have landed on using Zine for my webpage, per the recommendation of Drew DeVault.
 
-The [About] section should have enough information about me.
-The [Blog] section is where I post more deep articles, thinking or talking about different topics.
-The [Devlog] section hosts small "tweet" like posts about random things.
+The [About](/about/) section should have enough information about me.
+The [Blog](/blog/) section is where I post more deep articles, thinking or talking about different topics.
+The [Devlog](/devlog) section hosts small "tweet" like posts about random things.

@@ -12,6 +12,7 @@ h1 {
 h2 {
     color: #ff6a00
 }
+
 strong {
     color: #ffffff;
 }
@@ -26,6 +27,33 @@ code {
     padding: 0em !important;
 }
 
+table {
+    border: #aaa;
+    border-style: groove;
+    border-width: 0.1em;
+    text-align: left;
+}
+
+th {
+    border: #000;
+    border-bottom: groove;
+    padding-right: 1em;
+}
+
+td {
+    border: #000;
+    border-style: groove;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-right: 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #222;
+}
+
+
 pre {
     border: none;
     padding: 0.5em;
@@ -37,6 +65,7 @@ blockquote {
     border-style: dashed;
     padding: 0.5em;
 }
+
 html {
     color: #ccc;
     font-size: medium;
