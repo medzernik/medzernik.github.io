@@ -5,17 +5,24 @@
     font-style: normal;
 }
 
+h1 {
+    color: #ff7b00;
+}
+
+h2 {
+    color: #ff6a00
+}
 strong {
-    color: #fff;
+    color: #ffffff;
 }
 
 a {
-    color: #eee;
+    color: #00ffbf;
 }
 
 html {
     color: #ccc;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: "TX02";
     display: flex;
     flex-direction: row;
