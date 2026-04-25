@@ -20,9 +20,26 @@ a {
     color: #00ffbf;
 }
 
+code {
+    font-family: "TX02";
+    font-size: medium;
+    padding: 0em !important;
+}
+
+pre {
+    border: none;
+    padding: 0.5em;
+}
+
+blockquote {
+    border: #ccc;
+    font-size: medium;
+    border-style: dashed;
+    padding: 0.5em;
+}
 html {
     color: #ccc;
-    font-size: 1.1em;
+    font-size: medium;
     font-family: "TX02";
     display: flex;
     flex-direction: row;
@@ -40,13 +57,13 @@ body {
 .site-title {
     font-size: 2.5em;
     margin-bottom: 10px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     font-size: 1.2em;
     margin-bottom: 20px;
 }

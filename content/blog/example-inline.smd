@@ -3,7 +3,7 @@
 .date = @date("1990-01-02T00:00:00"),
 .author = "Sample Author",
 .layout = "post.shtml",
-.draft = false,
+.draft = true,
 --- 
 
 This second post is mainly here to show you that you can also create single file

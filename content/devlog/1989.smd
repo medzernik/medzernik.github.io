@@ -3,7 +3,7 @@
 .date = @date("1989-01-01T00:00:00"),
 .author = "Sample Author",
 .layout = "devlog.shtml",
-.draft = false,
+.draft = true,
 --- 
 []($section.id('about'))
 ## About this Devlog
