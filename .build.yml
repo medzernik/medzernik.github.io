@@ -1,0 +1,15 @@
+image: alpine/edge
+oauth: pages.sr.ht/PAGES:RW
+packages:
+  - hut
+  - zine
+environment:
+  site: medzernik.dev
+tasks:
+  - compile: |
+      zine release
+  - package: |
+      cd $site
+      tar -C public -cvz . > site.tar.gz
+  - upload: |
+      hut pages publish -d $site site.tar.gz
