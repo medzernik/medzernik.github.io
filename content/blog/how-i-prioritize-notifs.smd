@@ -3,5 +3,64 @@
 .date = @date("2026-05-02T00:00:00"),
 .author = "medzernik",
 .layout = "post.shtml",
-.draft = true,
+.draft = false,
 ---
+
+I always see all my friends have a shitton of notifications. Unread, waiting notifications that are completely ignored. Sometimes for weeks. Why?
+
+Probably due to notification "overflow" - but I never really understood this. Maybe I'm the only person alive that does any sort of notification management, but I do have a tiered system that I use for all my devices. I believe using such a tier system makes it much easier to focus on what's important and can't think of going through a day without it.
+
+I think I'll start from the most important notification types to the least important. Then I'll try to apply filters to the notifications by their importantce. The lower the number of something is, the higher priority it gets.
+
+> Note that I use Apple devices. However you can comfortable make a very similair priotization with Pixel devices as well. Probably other Androids too.
+
+Note that this goes hand in hand with a clean e-mail inbox and also with one golden rule:
+
+> Always process and clear out all notifications you have when the day ends. Never leave any for the next day.
+
+# Notification Categorization
+
+0. **Emergency Alerts** - These can be activated at any time, anywhere. Without any exception
+1. **Calls, Critical Health notifications** - Calls have the infinitely highest priority. No matter if I am asleep or awake, with one special exception I will get to later, calls and critical health notifications pretty much anytime. If someone wants to get hold of me for something important, they should voice call. This includes Apple's Facetime Audio calls and or the classic phone calls.
+   This also means people can wake me up when I sleep. I find that noone ever abused this and I think it's important to be able to get hold of a person if it's important. This also applies to couriers delivering items.
+2. **Direct Messages, Important News, E-mails**  - These are any direct messages from friends. This includes Discord, Telegram, Signal and other platforms.
+3.  **Regular News, App Updates, Others** - Strictly without any sound. Some apps are not allowed to wake the screen, but only to post the notification once I'm at using the phone.
+
+# Focus Modes
+
+There are multiple filters I apply, again, by the strictest:
+
+1. **Interview** -  This is a special focus mode. It blocks way more than it should and I only use it while I am at an interview, to guaruantee I won't get disturbed. I never use it for more than an hour or two. 
+2. **Sleep** -  Applied automatically every night.
+3. **Do not Disturb** - When there's many people messaging me at once and I need to focus, I usually turn this on via a keyboard function shortcut (present by default on all Macs). I also use this mode when I am on an unplanned call with someone important.
+4. **Reduce interruptions** - AI powered (at least on iOS) -  This is a filter I sometimes turn on when I feel like there's too many things going on while I work, but I want somewhat of a reduction in notifications.
+
+# Group Chats & Servers
+
+Group chats and servers are muted by default. At any point in any application if there is a group chat, it is automatically muted. This is to allow pings to notify me if someone wants to address me, the ping goes through. 
+
+Instagram chats and other apps I don't deem important are forbidden from making any sound notifications and also don't wake up the display when the arrive.
+
+# E-Mail
+
+I also specifically make sure I have every spam e-mail I don't want unsubscribed. Even more so, each e-mail that comes is something I look at and either archive immidiately, or leave for later in the inbox. Every e-mail I receive eventually gets archived. Any spam e-mails get immidiately unsubbed/blocked. 
+
+# Summary
+
+All through and through:
+
+| PRIORITY | CATEGORY                                      | MUTED BY              |
+| :------- | :-------------------------------------------- | :-------------------- |
+| 0        | Emergency Notifications                       | N/A                   |
+| 1        | Calls, Emergency Health, Critical Health Info | Interview             |
+| 2        | Direct Messages, Important News, E-mails      | Interview, Sleep, DnD |
+| 3        | News, Group Chats, Others                     | Always                |
+
+# Active Notification Management
+
+I also practice several other habits, such as muting specific people for up to 24 hours. I do this when there is a situation I am dealing with, usually involving multiple people which can affect my day plans and or is time-sensitive. Muting other people who are not part of dealing with a situation like this makes it possible for me to focus and react to notifications right away.
+
+This also goes the other way - if a person is sending too many messages in a row, I also usually mute them for up to 3 hours. I still respond, and try to get everything done, but i pace my replies in intervals, rather than responding immidiately. This allows for other notifications to go through - meaning I will get additional information from a notification sound/vibration in addition to what the person I am already talking to could provide. 
+
+That's pretty much it. I don't think theres much substance here, precisely because I feel like the system is very simple and has worked for me for more than a decade now. It's easy to set it up, and you never really have to think about it, yet it gives you some freedom to let through more or less "noise", depending on your mood, day, etc. 
+
