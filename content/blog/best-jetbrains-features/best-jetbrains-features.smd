@@ -1,0 +1,61 @@
+---
+.title = "Best JetBrains' Features (RustRover)",
+.date = @date("2026-07-23T00:00:00"),
+.author = "medzernik",
+.layout = "post.shtml",
+.draft = true,
+---
+
+_This article was written using RustRover_
+
+Over the years, I’ve been using the JetBrains tools along with the Zed editor the most in my professional and daily
+life. JetBrains tools are usually quite packed with features and fairly specialized. This means they’re mostly focused
+on the language they’ve been made to work with, with some overlap into other areas (for example, RustRover is pretty
+good at web dev stuff). People like to say that the flagship Idea IDE is the one that works with every language.
+However, I find that a hard sell, especially due to all the extra features it has and most of them being focused on
+Java.
+
+This makes JetBrains IDEs great at a specialized task, but also not that great when trying to use other more "obscure"
+languages, like Haskell or Zig. Even Rust was supported via a plugin for a long time before an official IDE arrived.
+
+> Disclaimer:
+> I don't get paid nor am supported by JetBrains in any way. I just like the tools and am passionate about having my dev
+> environment be the most comfortable it can be.
+
+# Refactorings
+
+I'll put this up first, as it's a generally known fact that refactorings in JetBrains are the best in the industry.
+Being able to modify a function signature comfortably, reorder arguments, and have them apply everywhere, all while
+having the comfortable autocompletion for all types from within the project analysis available, makes it a joy to do
+refactorings.
+
+# Natural Language
+
+The actual options for grammar checking are insane. There are so many options that are really great when enforcing a
+certain style in code comments, or blogposts.
+
+You have an option of doing an on-device language analysis or using the cloud analysis.
+
+> This is also why you see em-dashes. I didn't use any AI writing this article, but the natural language plugin wants
+> you to use them.
+
+![grammer_jetbrains.png](grammar_jetbrains.png)
+
+# IdeaVim
+
+# VCS Client
+
+# Scratch Files
+
+Having an idea, needing to write down some notes, all of this is usually done using external tools. However, I find that
+JetBrains has an excellent (and very underused!) feature: Scratches and Consoles.
+
+# Search Anywhere – Calculator
+
+Aside from being a great tool to find any file or command action, the calculator function does come pretty handy. It can
+handle just the basic +, -, *, /, ^, and sqrt, sin, cos and tan functions. What's more useful however, is that it can
+handle hex/binary and octal numbers as seen here:
+
+![search_anywhere_calc.png](search_anywhere_calculator.png)
+
+# Rust Exclusive Features
