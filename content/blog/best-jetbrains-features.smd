@@ -47,7 +47,7 @@ You have an option of doing an on-device language analysis or using the cloud an
 > This is also why you see em-dashes. I didn't use any AI writing this article, but the natural language plugin wants
 > you to use them.
 
-[grammer_jetbrains.png](<$image.asset("grammar_jetbrains.png")>)
+[](<$image.asset("grammar_jetbrains.png")>)
 
 # IdeaVim
 
