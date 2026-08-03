@@ -3,6 +3,7 @@ oauth: pages.sr.ht/PAGES:RW
 packages:
   - hut
   - curl
+  - tar
 environment:
   site: medzernik.dev
 tasks:
