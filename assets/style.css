@@ -60,7 +60,7 @@ pre {
 blockquote {
     border: #ccc;
     font-size: medium;
-    border-style: dashed;
+    border-style: dotted;
     padding: 0.5em;
 }
 
