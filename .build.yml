@@ -2,10 +2,14 @@ image: alpine/edge
 oauth: pages.sr.ht/PAGES:RW
 packages:
   - hut
-  - zine
+  - curl
 environment:
   site: medzernik.dev
 tasks:
+  - zine: |
+      curl https://github.com/kristoff-it/zine/releases/download/v0.13.0/x86_64-linux-musl.tar.xz -O -L
+      tar -xvf x86_64-linux-musl.tar.xz
+      pwd
   - version: |
       zine --version
   - compile: |
