@@ -1,7 +1,7 @@
 ---
 .title = "Homepage",
-.date = @date("2026-04-25T00:00:00"),
-.author = "medzernik",
+.date = .date("2026-04-25T00:00:00"),
+.authors = ["medzernik"],
 .layout = "index.shtml",
 .draft = false,
 --- 

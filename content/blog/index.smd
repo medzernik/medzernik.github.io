@@ -1,9 +1,9 @@
 ---
 .title = "Blog",
-.date = @date("2026-04-25T00:00:00"),
-.author = "medzernik",
+.date = .date("2026-04-25T00:00:00"),
+.authors = ["medzernik"],
 .layout = "blog.shtml",
-.alternatives = [{ 
+.alternatives = [.{ 
     .name = "rss",
     .layout = "blog.xml", 
     .output = "index.xml",

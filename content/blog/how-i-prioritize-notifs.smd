@@ -1,7 +1,7 @@
 ---
 .title = "How I Prioritize Notifications",
-.date = @date("2026-05-02T00:00:00"),
-.author = "medzernik",
+.date = .date("2026-05-02T00:00:00"),
+.authors = ["medzernik"],
 .layout = "post.shtml",
 .draft = false,
 ---
@@ -63,4 +63,3 @@ I also practice several other habits, such as muting specific people for up to 2
 This also goes the other way - if a person is sending too many messages in a row, I also usually mute them for up to 3 hours. I still respond, and try to get everything done, but i pace my replies in intervals, rather than responding immidiately. This allows for other notifications to go through - meaning I will get additional information from a notification sound/vibration in addition to what the person I am already talking to could provide. 
 
 That's pretty much it. I don't think theres much substance here, precisely because I feel like the system is very simple and has worked for me for more than a decade now. It's easy to set it up, and you never really have to think about it, yet it gives you some freedom to let through more or less "noise", depending on your mood, day, etc. 
-

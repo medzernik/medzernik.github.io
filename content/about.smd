@@ -1,14 +1,14 @@
 ---
 .title = "About",
-.date = @date("2026-04-25T00:00:00"),
-.author = "medzernik",
+.date = .date("2026-04-25T00:00:00"),
+.authors = ["medzernik"],
 .layout = "index.shtml",
 .draft = false,
 --- 
 
 I will fill this page out later :D
 
-## The Tech Stack I Use
+# The Tech Stack I Use
 | Type       	| Item                                                	|
 |-------------- |-----------------------------------------------------	|
 | Code Editor   | Zed                                                 	|
@@ -17,7 +17,7 @@ I will fill this page out later :D
 
 
 
-## Current PC Build
+# Current PC Build
 My current main PC
 
 
