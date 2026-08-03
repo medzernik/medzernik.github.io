@@ -13,10 +13,10 @@ tasks:
       tar -xvf x86_64-linux-musl.tar.xz
       pwd
   - version: |
-      zine --version
+      ./zine --version
   - compile: |
       cd $site
-      zine release
+      ../zine release
   - package: |
       cd $site
       tar -C public -cvz . > site.tar.gz
