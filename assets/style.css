@@ -97,6 +97,9 @@ nav {
     margin-bottom: 20px;
 }
 
+figure {
+    align-self: center;
+}
 .block {
     border: 1px dotted white;
     padding: 5px 15px;
