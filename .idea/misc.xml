@@ -11,9 +11,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="RsVcsConfiguration">
-    <option name="rustFmt" value="true" />
-  </component>
   <component name="RustProjectSettings">
     <option name="testRunner" value="Nextest" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
