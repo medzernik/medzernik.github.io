@@ -8,6 +8,7 @@ environment:
 tasks:
   - compile: |
       cd $site
+      zine --version
       zine release
   - package: |
       cd $site
