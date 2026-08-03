@@ -4,6 +4,7 @@ packages:
   - hut
   - curl
   - tar
+  - xz
 environment:
   site: medzernik.dev
 tasks:
