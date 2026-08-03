@@ -31,7 +31,7 @@ Being able to modify a function signature comfortably, reorder arguments, and ha
 having the comfortable autocompletion for all types from within the project analysis available, makes it a joy to do
 refactorings.
 
-[](<$image.asset("refactoring.png")>)
+[refactorings](<$image.asset("refactoring.png").size(500,0)>)
 
 Code generation is also a nice feature that allows you to quickly generate setters and getters, plus some other
 constructs. This is, however, also provided by the Rust-Analyzer LSP, so you may know of this particular feature for
@@ -47,7 +47,7 @@ You have an option of doing an on-device language analysis or using the cloud an
 > This is also why you see em-dashes. I didn't use any AI writing this article, but the natural language plugin wants
 > you to use them.
 
-[](<$image.asset("grammar_jetbrains.png")>)
+[grammar](<$image.asset("grammar_jetbrains.png").size(500,0)>)
 
 # IdeaVim
 
@@ -72,7 +72,7 @@ for $ VAR$ in $ ITERABLE$ {}
 
 You can [make your own](https://www.jetbrains.com/help/rust/creating-and-editing-live-templates.html) custom templates
 using the powerful editor:
-[live_templates.png](<$image.asset("live_templates.png")>)
+[live_templates.png](<$image.asset("live_templates.png").size(500,0)>)
 
 # Scratch Files and Consoles
 
@@ -93,32 +93,32 @@ Aside from being a great tool to find any file or command action, the calculator
 handle just the basic +, -, *, /, ^, and sqrt, sin, cos and tan functions. What's more useful however, is that it can
 handle hex/binary and octal numbers as seen here:
 
-[search_anywhere_calc.png](<$image.asset("search_anywhere_calculator.png")>)
+[search_anywhere_calc.png](<$image.asset("search_anywhere_calculator.png").size(500,0)>)
 
 # Bookmarks
 
 It's a really nice feature for remembering where important parts of your code are. What's more, by default it's
 individual per branch.
 
-[bookmarks.png](<$image.asset("bookmarks.png")>)
+[bookmarks.png](<$image.asset("bookmarks.png").size(500,0)>)
 
 There's also a mnemonic interface that you can use to bind shortcuts for each bookmark.
 
-[mnemonic_bookmarks.png](<$image.asset("mnemonic_bookmarks.png")>)
+[mnemonic_bookmarks.png](<$image.asset("mnemonic_bookmarks.png").size(500,0)>)
 
 And what's more, you can create editor tab lists as bookmarks:
 
-[tablist_bookmarks.png](<$image.asset("tablist_bookmarks.png")>)
+[tablist_bookmarks.png](<$image.asset("tablist_bookmarks.png").size(500,0)>)
 
 # Code Coverage
 
 A very useful feature of the JetBrains suite is that you have an option to display direct code coverage:
 
-[coverage_lines.png](<$image.asset("coverage_lines.png")>)
+[coverage_lines.png](<$image.asset("coverage_lines.png").size(500,0)>)
 
 What's even nicer is that you can then parse the code coverage reports generated using the IDE into a visual line
 highlighter:
-[coverage_visual.png](<$image.asset("coverage_visual.png")>)
+[coverage_visual.png](<$image.asset("coverage_visual.png").size(500,0)>)
 
 # Rust Exclusive Features
 
@@ -129,7 +129,7 @@ Many interesting features specific to RustRover
 One such case is the proper `Cargo.toml` parsing. In the inlay hints, RustRover shows the proper versions currently used
 in your lockfile, as well as any potential updates available upstream.
 
-[lockfile_info.png](<$image.asset("lock_info.png")>)
+[lockfile_info.png](<$image.asset("lock_info.png").size(500,0)>)
 
 There is also code completion for the `Cargo.toml` file available, as well as autocompletion of crate names from
 `crates-io`
@@ -139,7 +139,7 @@ There is also code completion for the `Cargo.toml` file available, as well as au
 You can even disable or enable individual features of a crate with a click. This results in the natural support of
 [conditional compilation](https://www.jetbrains.com/help/rust/rust-cfg-support.html).
 
-[conditional_compilation.png](<$image.asset("conditional_compilation.png")>)
+[conditional_compilation.png](<$image.asset("conditional_compilation.png").size(500,0)>)
 
 ## Doctests
 
@@ -150,13 +150,13 @@ Support for doctests, including syntax highlighting in doc comments, and embedde
 Many developers use the `nextest` app to run tests a bit quicker and see nicer reports. RustRover supports this
 natively, just choose the test runner in the settings:
 
-[nextest_config.png](<$image.asset("nextest_config.png")>)
+[nextest_config.png](<$image.asset("nextest_config.png").size(500,0)>)
 
 ## Axum and Reqwest
 
 Showing endpoints for both Reqwest and Axum, this feature alone is extremely useful when making backend applications.
 
-[axum_endpoints.png](<$image.asset("axum_endpoints.png")>)
+[axum_endpoints.png](<$image.asset("axum_endpoints.png").size(500,0)>)
 
 There is also an integrated HTTP client that can handle `gRPC` requests. You can also use this client as
 a [CLI tool](https://www.jetbrains.com/ijhttp/download/?section=zip-archive).
