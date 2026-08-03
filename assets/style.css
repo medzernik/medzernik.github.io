@@ -1,8 +1,6 @@
 @font-face {
     font-family: "TX02";
     src: url("TX02.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
 }
 
 h1 {
@@ -67,9 +65,9 @@ blockquote {
 }
 
 html {
-    color: #ccc;
-    font-size: medium;
-    font-family: "TX02";
+    color: #f8f8f8;
+    font-family: "TX02", monospace;
+    font-weight: 300;
     display: flex;
     flex-direction: row;
     justify-content: center;
