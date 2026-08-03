@@ -6,9 +6,10 @@ packages:
 environment:
   site: medzernik.dev
 tasks:
+  - version: |
+      zine --version
   - compile: |
       cd $site
-      zine --version
       zine release
   - package: |
       cd $site
