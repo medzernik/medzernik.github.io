@@ -1,0 +1,9 @@
+---
+.title = "A Tale of Two Workflows",
+.date = .date("2026-08-11T00:00:00"),
+.authors = ["medzernik"],
+.layout = "post.shtml",
+.draft = true,
+---
+
+Recently, I've been completely paralyzed choosing between two workflows. I can't ever decide between liking the full featured IDE editor workflow of JetBrains, or the more tool-for-the-job workflow of Zed/Helix combined with other tools. I will try to describe what I like the most about these 2 workflows and see if maybe my thoughts can help other people decide.
