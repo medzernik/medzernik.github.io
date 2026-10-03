@@ -4,33 +4,31 @@
 .authors = ["medzernik"],
 .layout = "index.shtml",
 .draft = false,
---- 
+---
 
 I will fill this page out later :D
 
 # The Tech Stack I Use
 
-| Type       	 | Item                                      |
-|----------------|-------------------------------------------|
-| IDE            | JetBrains (RustRover, GoLand, etc.)       |
-| Code Editor    | Zed                                       |
-
-
-
+| Type        | Item                                |
+| ----------- | ----------------------------------- |
+| IDE         | JetBrains (RustRover, GoLand, etc.) |
+| Code Editor | Zed                                 |
 
 # Current PC Build
+
 My current main PC
 
-| Type       	 | Item                                                	           |
-|----------------|-----------------------------------------------------------------|
-| Keyboard   	 | Corsair Galleon 100 SD                                          |
-| Mouse      	 | Logitech G PRO X 2 SUPERSTRIKE                      	           |
-| Mousepad   	 | Lamzu ENERGON                                     	           |
-| Monitors   	 | AOC AGON OLED 27'' 2k 240Hz HDR 1000, Dell S2721DGF 	           |
-| CPU        	 | AMD Ryzen 7950X3D                                   	           |
-| GPU        	 | NVIDIA 4070Ti 12GB                                  	           |
-| Soundcard  	 | Creative AE-9                                       	           |
-| Speakers   	 | Creative pebbles 1st gen                          	           |
-| RAM        	 | 64GB DDR5 Corsair 6000MHz                           	           |
-| Mic        	 | HyperX QuadCast Pro                                 	           |
-| Headphones 	 | Razer Blackshark V2                                 	           |
+| Type       | Item                                                |
+| ---------- | --------------------------------------------------- |
+| Keyboard   | Corsair Galleon 100 SD                              |
+| Mouse      | Logitech G PRO X 2 SUPERSTRIKE                      |
+| Mousepad   | Lamzu ENERGON                                       |
+| Monitors   | AOC AGON OLED 27'' 2k 240Hz HDR 1000, Dell S2721DGF |
+| CPU        | AMD Ryzen 7950X3D                                   |
+| GPU        | NVIDIA 4070Ti 12GB                                  |
+| Soundcard  | Creative AE-9                                       |
+| Speakers   | Creative pebbles 1st gen                            |
+| RAM        | 64GB DDR5 Corsair 6000MHz                           |
+| Mic        | HyperX QuadCast Pro                                 |
+| Headphones | Razer Blackshark V2                                 |
